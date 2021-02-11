@@ -1,0 +1,111 @@
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+#id_form > input{
+  border: 0;
+  outline: 0;
+}
+
+.strip{
+  min-height: 400px;
+  padding: 16px;
+  background: rgba(128,54,150,1);
+  background: linear-gradient(to right, rgba(128,54,150,1) 0%, rgba(130,48,151,1) 29%, rgba(153,50,174,1) 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strip h1 {
+  color: #36e7ff;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.strip > a {
+  display: inline-block;
+  padding: 16px 64px;
+  border-radius: 48px;
+  background-color: rgb(39, 177, 196);
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.strip > a:hover {
+  background-color: rgb(30, 152, 168);
+}
+
+main{
+  margin-bottom: 60px;
+}
+
+.song_img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.song_player{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 24px;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+cursor: pointer;
+}
+
+.fa-play{
+  position: absolute;
+  bottom: calc(0.25em);
+  left: calc(100% - 1em);
+  cursor: pointer;
+}
+
+#id_audio_box{
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#id_audio{
+  background-color: #f1f3f4;
+}
+
+@media screen and (min-width:767px){
+  .song_img{
+    min-height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:767px){
+  .song_img{
+    min-height: 100px;
+  }
+
+  .song_box{
+    border-top: 1px solid #dee2e6;
+    padding-top: 16px;
+  }
+
+  .strip{
+    min-height: 350px;
+  }
+}
